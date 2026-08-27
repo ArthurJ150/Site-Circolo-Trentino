@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circolo Cultural Tours — Comemorações Culturais</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html"><img src="imagens/logoCircolo.png" alt="Circolo Trentino logo"></a>
+
+        <nav class="main-nav">
+            <a href="index.html">Início</a>
+            <a href="html/eventos.html">Eventos</a>
+            <a href="html/noticias.html">Notícias</a>
+            <a href="html/santa-teresa.html">Santa Teresa</a>
+            <a href="html/sobre-nos.html">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <button class="btn btn-primary" href="html/seja-socio.html">Seja Sócio</button>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Ativar tema escuro" aria-pressed="false">
+            <img src="imagens/tema.png" alt="Alternar tema">
+        </button>
+        <button id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </header>
+
+    <main>
+        <section class="promo-carousel" aria-label="Destaques culturais">
+            <div class="carousel-track">
+                <article class="promo-slide active">
+                    <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=80"
+                        alt="Festa tradicional com público">
+                    <div class="promo-copy">
+                        <span class="promo-tag">Cultura local</span>
+                        <h2>Tradições que unem a comunidade</h2>
+                        <p>Festivais, procissões e celebrações que fortalecem a identidade regional.</p>
+                    </div>
+                </article>
+
+                <article class="promo-slide">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80"
+                        alt="Evento cultural em praça pública">
+                    <div class="promo-copy">
+                        <span class="promo-tag">Eventos</span>
+                        <h2>Produção completa em cada edição</h2>
+                        <p>Planejamento, logística e execução para experiências memoráveis e seguras.</p>
+                    </div>
+                </article>
+
+                <article class="promo-slide">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+                        alt="Grupo de artistas locais em apresentação">
+                    <div class="promo-copy">
+                        <span class="promo-tag">Patrimônio cultural</span>
+                        <h2>Artistas e comunidades em destaque</h2>
+                        <p>Valorizamos manifestações locais, música, gastronomia e memória coletiva.</p>
+                    </div>
+                </article>
+            </div>
+
+            <button class="carousel-btn prev" aria-label="Slide anterior">‹</button>
+            <button class="carousel-btn next" aria-label="Próximo slide">›</button>
+
+            <div class="carousel-dots" aria-label="Navegação do carrossel">
+                <button class="dot active" data-slide="0" aria-label="Ir para o slide 1"></button>
+                <button class="dot" data-slide="1" aria-label="Ir para o slide 2"></button>
+                <button class="dot" data-slide="2" aria-label="Ir para o slide 3"></button>
+            </div>
+        </section>
+
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Celebramos tradição, criamos experiências</h1>
+                <p>Produção e coordenação de festas, romarias e shows culturais que valorizam a identidade local.</p>
+                <a class="btn btn-primary" href="html/eventos.html">Ver eventos</a>
+            </div>
+        </section>
+
+        <section class="previa">
+            <h2>Sobre a empresa</h2>
+
+            <p>
+                A Circolo Cultural Tours é especializada em planejar e executar comemorações culturais e festivais
+                comunitários. Atuamos desde a concepção até a produção, integrando artistas locais, segurança, logística
+                e divulgação para garantir eventos memoráveis e seguros.
+            </p>
+        </section>
+
+        <section class="servicos">
+            <h2>Nossos serviços</h2>
+            <ul>
+                <li>Planejamento e curadoria de programação</li>
+                <li>Produção técnica (palco, som e iluminação)</li>
+                <li>Gestão de fornecedores e licenças</li>
+                <li>Comunicação e promoção</li>
+            </ul>
+        </section>
+
+        <section id="novidades">
+            <h2>Próximos eventos</h2>
+            <div class="event-list" id="outNoticias"></div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Interessado em contratar nossos serviços? Envie um e-mail para <a
+                    href="mailto:contato@circolo.com">contato@circolo.com</a> ou ligue para (27) 9 9988-7766.</p>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
