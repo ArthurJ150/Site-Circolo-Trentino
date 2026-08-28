@@ -518,12 +518,6 @@ footer {
     #hero {
         grid-template-columns: 1fr;
     }
-
-    .hero-img {
-        min-height: 220px;
-        border-right: none;
-        border-bottom: 1px solid rgba(20, 45, 60, 0.08);
-    }
 }
 
 @media (max-width: 520px) {
@@ -575,20 +569,3 @@ footer {
     }
 }
 
-/* Pequenas melhorias de tipografia e espaçamento específicas para a página de associação */
-.seja-socio-intro {
-    margin-bottom: 0.8rem;
-}
-
-.seja-socio-points {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 0.8rem;
-}
-
-.seja-socio-points li {
-    background: rgba(250, 247, 242, 0.8);
-    padding: 0.7rem 0.9rem;
-    border-radius: 10px;
-    border: 1px solid rgba(20, 45, 60, 0.04);
-}
