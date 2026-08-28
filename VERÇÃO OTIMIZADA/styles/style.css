@@ -1,14 +1,7 @@
 :root {
-    --navy-900: #0d2437;
-    --navy-800: #163b4d;
-    --navy-700: #214f66;
+    --navy-900: #4b2727;
     --gold-500: #c89b3c;
     --gold-600: #b68021;
-    --sand-100: #f5f0e7;
-    --sand-200: #e9dfd0;
-    --stone-100: #edf2f4;
-    --stone-300: #d6dfe3;
-    --stone-500: #73818a;
     --ink-900: #1a2a31;
     --ink-700: #374b55;
     --white: #ffffff;
@@ -78,7 +71,7 @@ header {
     justify-content: space-between;
     gap: 16px;
     padding: 18px 28px;
-    background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-800) 100%);
+    background: var(--navy-900);
     border-bottom: 2px solid rgba(200, 155, 60, 0.8);
     box-shadow: 0 6px 18px rgba(13, 36, 55, 0.18);
 }
@@ -286,7 +279,7 @@ main {
     font-size: 2.1rem;
     line-height: 1;
     cursor: pointer;
-    transition: background 0.2s ease, transform 0.2s ease;
+    transition: 0.2s ease, transform 0.2s ease;
     z-index: 2;
 }
 
@@ -463,7 +456,7 @@ body[data-theme="dark"] #hero {
 }
 
 footer {
-    background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-700) 100%);
+    background: var(--navy-900);
     color: rgba(255, 255, 255, 0.82);
     text-align: center;
     padding: 1.5rem 1rem 2rem;

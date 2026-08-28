@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	// Tornar o botão "Seja Sócio" funcional em todas as páginas (pode haver cópias com o mesmo id)
-	document.querySelectorAll('*[id="btSocio"]').forEach(btn => {
+	document.querySelectorAll('#btSocio').forEach(btn => {
 		btn.addEventListener('click', () => {
 			// Se estivermos na raiz (index.html ou pasta raiz), navegar para html/seja-socio.html
 			// Se já estivermos dentro da pasta html, navegar para seja-socio.html
