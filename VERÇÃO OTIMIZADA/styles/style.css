@@ -1,5 +1,7 @@
 :root {
-    --navy-900: #4b2727;
+    --navy-900: #0d2437;
+    --navy-800: #163b4d;
+    --navy-700: #214f66;
     --gold-500: #c89b3c;
     --gold-600: #b68021;
     --sand-100: #f5f0e7;
@@ -76,7 +78,7 @@ header {
     justify-content: space-between;
     gap: 16px;
     padding: 18px 28px;
-    background: var(--navy-900);
+    background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-800) 100%);
     border-bottom: 2px solid rgba(200, 155, 60, 0.8);
     box-shadow: 0 6px 18px rgba(13, 36, 55, 0.18);
 }
@@ -156,6 +158,10 @@ header {
     font-size: 1.35rem;
     box-shadow: 0 4px 12px rgba(10, 18, 32, 0.18);
     overflow: hidden;
+}
+
+.main-nav .theme-toggle {
+    margin-left: 4px;
 }
 
 .theme-toggle img {
@@ -478,7 +484,7 @@ footer {
         right: 16px;
         display: none;
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         gap: 10px;
         background: rgba(13, 36, 55, 0.97);
         border: 1px solid rgba(200, 155, 60, 0.5);
@@ -497,6 +503,12 @@ footer {
         padding: 12px 14px;
     }
 
+    .main-nav .theme-toggle {
+        margin: 4px auto 2px;
+        width: 52px;
+        height: 52px;
+    }
+
     #menuToggle {
         display: inline-flex;
         align-items: center;
@@ -505,12 +517,6 @@ footer {
 
     #hero {
         grid-template-columns: 1fr;
-    }
-
-    .hero-img {
-        min-height: 220px;
-        border-right: none;
-        border-bottom: 1px solid rgba(20, 45, 60, 0.08);
     }
 }
 
@@ -563,20 +569,3 @@ footer {
     }
 }
 
-/* Pequenas melhorias de tipografia e espaçamento específicas para a página de associação */
-.seja-socio-intro {
-    margin-bottom: 0.8rem;
-}
-
-.seja-socio-points {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 0.8rem;
-}
-
-.seja-socio-points li {
-    background: rgba(250, 247, 242, 0.8);
-    padding: 0.7rem 0.9rem;
-    border-radius: 10px;
-    border: 1px solid rgba(20, 45, 60, 0.04);
-}
