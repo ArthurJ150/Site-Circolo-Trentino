@@ -2,11 +2,6 @@
     --navy-900: #4b2727;
     --gold-500: #c89b3c;
     --gold-600: #b68021;
-    --sand-100: #f5f0e7;
-    --sand-200: #e9dfd0;
-    --stone-100: #edf2f4;
-    --stone-300: #d6dfe3;
-    --stone-500: #73818a;
     --ink-900: #1a2a31;
     --ink-700: #374b55;
     --white: #ffffff;
@@ -158,6 +153,10 @@ header {
     overflow: hidden;
 }
 
+.main-nav .theme-toggle {
+    margin-left: 4px;
+}
+
 .theme-toggle img {
     width: 22px;
     height: 22px;
@@ -280,7 +279,7 @@ main {
     font-size: 2.1rem;
     line-height: 1;
     cursor: pointer;
-    transition: background 0.2s ease, transform 0.2s ease;
+    transition: 0.2s ease, transform 0.2s ease;
     z-index: 2;
 }
 
@@ -457,7 +456,7 @@ body[data-theme="dark"] #hero {
 }
 
 footer {
-    background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-700) 100%);
+    background: var(--navy-900);
     color: rgba(255, 255, 255, 0.82);
     text-align: center;
     padding: 1.5rem 1rem 2rem;
@@ -478,7 +477,7 @@ footer {
         right: 16px;
         display: none;
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         gap: 10px;
         background: rgba(13, 36, 55, 0.97);
         border: 1px solid rgba(200, 155, 60, 0.5);
@@ -497,6 +496,12 @@ footer {
         padding: 12px 14px;
     }
 
+    .main-nav .theme-toggle {
+        margin: 4px auto 2px;
+        width: 52px;
+        height: 52px;
+    }
+
     #menuToggle {
         display: inline-flex;
         align-items: center;
@@ -505,12 +510,6 @@ footer {
 
     #hero {
         grid-template-columns: 1fr;
-    }
-
-    .hero-img {
-        min-height: 220px;
-        border-right: none;
-        border-bottom: 1px solid rgba(20, 45, 60, 0.08);
     }
 }
 
@@ -563,20 +562,3 @@ footer {
     }
 }
 
-/* Pequenas melhorias de tipografia e espaçamento específicas para a página de associação */
-.seja-socio-intro {
-    margin-bottom: 0.8rem;
-}
-
-.seja-socio-points {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 0.8rem;
-}
-
-.seja-socio-points li {
-    background: rgba(250, 247, 242, 0.8);
-    padding: 0.7rem 0.9rem;
-    border-radius: 10px;
-    border: 1px solid rgba(20, 45, 60, 0.04);
-}
